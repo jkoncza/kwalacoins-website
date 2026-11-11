@@ -1,14 +1,38 @@
 {
   "coin": "KwalaCoins",
   "ticker": "KWALA",
-  "updated_at": "2026-11-11T17:39:54.388784+00:00",
+  "updated_at": "2026-11-11T17:41:59.847980+00:00",
   "genesis": "00000054d99e34f12dcbfe25082833e2e1d28a455be6fde4faac5fc1acf03cb1",
-  "height": 1330,
-  "best_block_hash": "0000002391deccd60dd50e9ac328e7bd00d3a4102e5ad77e9e968953f12bb29c",
+  "height": 1332,
+  "best_block_hash": "00000055126a6164f0633b4c8ff0da4c9f28bc48da46e72a2be4df8ebba9784a",
   "difficulty": 0.009765485301480581,
   "verification_progress": 1,
   "chain": "main",
   "blocks": [
+    {
+      "height": 1332,
+      "hash": "00000055126a6164f0633b4c8ff0da4c9f28bc48da46e72a2be4df8ebba9784a",
+      "time": 1794418882,
+      "date": "2026-11-11T17:41:22+00:00",
+      "tx_count": 1,
+      "txids": [
+        "5e811df1aed7bb17d48a2f56bd2d48f9e8d0225623df57703f3b559c1f05d30d"
+      ],
+      "difficulty": 0.009765485301480581,
+      "confirmations": 1
+    },
+    {
+      "height": 1331,
+      "hash": "0000004814c3b358b1165808ad33f9967e12970f1badb9fd0294e3a797e6b7bd",
+      "time": 1794418314,
+      "date": "2026-11-11T17:31:54+00:00",
+      "tx_count": 1,
+      "txids": [
+        "60f8a28dbc7b6781b097a621c3ab8b2d2dfbc942f05e5bd6d92144def1f8c0c5"
+      ],
+      "difficulty": 0.009765485301480581,
+      "confirmations": 2
+    },
     {
       "height": 1330,
       "hash": "0000002391deccd60dd50e9ac328e7bd00d3a4102e5ad77e9e968953f12bb29c",
@@ -19,7 +43,7 @@
         "734ec371dece237740dbeaa4f46a09991235341092e2049103c83a4465531bb4"
       ],
       "difficulty": 0.009765485301480581,
-      "confirmations": 1
+      "confirmations": 3
     },
     {
       "height": 1329,
@@ -31,7 +55,7 @@
         "95d243c076e8bf40e337608792348526cd06eac9a1552239182c3f6e91eb64a7"
       ],
       "difficulty": 0.009765485301480581,
-      "confirmations": 2
+      "confirmations": 4
     },
     {
       "height": 1328,
@@ -43,7 +67,7 @@
         "686fa1703d5e90a877074e28b320d9129cbf7b80c1838debcb3ad779a4be2d8b"
       ],
       "difficulty": 0.009765485301480581,
-      "confirmations": 3
+      "confirmations": 5
     },
     {
       "height": 1327,
@@ -55,7 +79,7 @@
         "547b332efb8e228451d91b2aa53208ebaa660b596a3b7f101a46e81050ff487c"
       ],
       "difficulty": 0.009765485301480581,
-      "confirmations": 4
+      "confirmations": 6
     },
     {
       "height": 1326,
@@ -67,7 +91,7 @@
         "9b80ed35ecbfd441dca28bf02618f40b04a3be5c3126016a99af46479954545b"
       ],
       "difficulty": 0.009765485301480581,
-      "confirmations": 5
+      "confirmations": 7
     },
     {
       "height": 1325,
@@ -79,7 +103,7 @@
         "e428896319b9d39157bbaf8bbb2587e1513f24a64874db5780b9bee1a80d332a"
       ],
       "difficulty": 0.009765485301480581,
-      "confirmations": 6
+      "confirmations": 8
     },
     {
       "height": 1324,
@@ -91,7 +115,7 @@
         "d8156b7b9c3c92b15bbc4a0a0caa31bc02875a43e240dffd389ca9c3f557065f"
       ],
       "difficulty": 0.009765485301480581,
-      "confirmations": 7
+      "confirmations": 9
     },
     {
       "height": 1323,
@@ -101,30 +125,6 @@
       "tx_count": 1,
       "txids": [
         "fdbffc69a1b431e3cd620afee2550643067dd673b48323d09ecec4ad44fd2a16"
-      ],
-      "difficulty": 0.009765485301480581,
-      "confirmations": 8
-    },
-    {
-      "height": 1322,
-      "hash": "00000031e5c8349d21f8dbdc846e0cfa7fed508f529908260d0e36c0fdd07c51",
-      "time": 1794414377,
-      "date": "2026-11-11T16:26:17+00:00",
-      "tx_count": 1,
-      "txids": [
-        "e557e95e363bb7dde8285771a06fd2aeaf457124ace910e51a0d8b9bb5a8e60f"
-      ],
-      "difficulty": 0.009765485301480581,
-      "confirmations": 9
-    },
-    {
-      "height": 1321,
-      "hash": "0000001c3433622bf1a1a469b7c897ee1af036f272f4d2c1c61282b809263cac",
-      "time": 1794413261,
-      "date": "2026-11-11T16:07:41+00:00",
-      "tx_count": 1,
-      "txids": [
-        "761727762ee1980d4eb6b6772e7f4b6466d34f91b16da52ba190058805d52406"
       ],
       "difficulty": 0.009765485301480581,
       "confirmations": 10
