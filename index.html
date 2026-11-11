@@ -323,7 +323,11 @@ kwala-cli validateaddress &lt;your-address&gt;</code></pre>
       <!-- ================= EXPLORER ================= -->
       <section id="explorer">
         <h2>Block explorer</h2>
-        <p class="sub">Look up the genesis block, check any block height against the emission schedule, or validate the format of an address or transaction ID. KwalaCoins has no public node with an open API yet, so live block-by-block browsing isn't possible from a web page today — what's below is everything that can be answered from the chain's own verified parameters, plus the exact commands to explore the live chain from your own node.</p>
+        <div id="live-box" class="card" role="status" aria-live="polite">
+          <p><span class="badge badge-info">Live</span> <strong>Loading live chain data…</strong></p>
+          <p style="margin-bottom:0;">If this stays loading, <span class="mono">live.json</span> hasn't been pushed yet — start <span class="mono">live_bridge.py --push</span> on the synced node. The static search below still works meanwhile.</p>
+        </div>
+        <p class="sub">Look up the genesis block, check any block height against the emission schedule, or validate the format of an address or transaction ID. <strong>This explorer is now live:</strong> the box below shows the current height and latest blocks, updated every 2–3 minutes from a synced KwalaCoins node via <span class='mono'>live.json</span> (see <a href='#run-a-node'>live bridge</a>). Search a recent height or block hash and you'll get the real block, not just the emission schedule.</p>
 
         <div class="card">
           <form id="search-form" class="search-row">
@@ -368,7 +372,7 @@ kwala-cli getrawtransaction &lt;txid&gt; true
 
 # Is an address well-formed for this network?
 kwala-cli validateaddress &lt;address&gt;</code></pre>
-          <p style="margin-bottom:0;">For this page to browse live blocks directly, someone needs to run a public node with an explorer backend (for example Esplora or electrs, the standard Bitcoin Core explorer stacks) and point this page at it. That's item 3 on the <a href="#exchanges">listing readiness checklist</a> — exchanges ask for a working public explorer by name.</p>
+          <p style="margin-bottom:0;">This page now browses live blocks directly from <span class='mono'>live.json</span>, updated every 2 minutes by <span class='mono'>live_bridge.py</span> running on a synced node — no Docker, no Esplora, no port-forward. That's item 3 on the <a href="#exchanges">listing readiness checklist</a> — exchanges ask for a working public explorer by name. Address balances and old-transaction search still need a full electrs index; this bridge shows latest blocks and height.</p>
         </div>
       </section>
 
@@ -494,7 +498,7 @@ kwala-cli getnewaddress</code></pre>
             <li class="done"><strong>Open-source code, publicly available</strong><span class="tag">Done — full source on GitHub, based on Bitcoin Core 28.0.</span></li>
             <li class="done"><strong>A public website with chain specifications</strong><span class="tag">Done — this page. Next step is putting it on its own domain (see Get a domain below).</span></li>
             <li class="todo"><strong>A real peer-to-peer network</strong><span class="tag">Not done — no DNS seeds in the code and one known public peer. Exchanges need a resilient network they can run nodes against, not a single point of failure.</span></li>
-            <li class="todo"><strong>A live public block explorer</strong><span class="tag">Not done — Coinbase's application asks for block explorer links by name. Needs a hosted node + explorer backend.</span></li>
+            <li class="done"><strong>A live public block explorer</strong><span class="tag">Live — latest blocks &amp; height via live.json, updated every 2–3 min from a synced node. Address / old-tx lookup still needs electrs.</span></li>
             <li class="todo"><strong>Trading history, liquidity &amp; a market maker</strong><span class="tag">Not done — KWALA has never traded anywhere, so it has no price, no volume, and no market depth. Major exchanges almost always come after a coin trades on smaller venues; both also assess market demand and community traction.</span></li>
             <li class="todo"><strong>Legal &amp; compliance groundwork</strong><span class="tag">Not done — both exchanges run legal review (including whether the asset could be a security) and compliance review. A named team, project documentation/whitepaper, and a legal opinion are the usual inputs.</span></li>
             <li class="todo"><strong>Time on the clock</strong><span class="tag">The chain launched 5 November 2026. Reviewers look for a network that has run stably, with real users, for far longer than a week.</span></li>
@@ -628,6 +632,23 @@ kwala-cli getnewaddress</code></pre>
           var html = "";
           if (!q) {
             html = "<h4><span class='badge badge-err'>Empty search</span></h4><p style='margin-bottom:0;'>Paste a block hash, transaction ID, address, or block height above.</p>";
+          } else if (window.__liveData && /^\d+$/.test(q) && window.__liveByHeight[parseInt(q, 10)]) {
+            var lb = window.__liveByHeight[parseInt(q, 10)];
+            html = "<h4>Block " + fmt(lb.height) + " <span class='badge badge-ok'>Live</span></h4>" +
+              "<dl><dt>Hash</dt><dd class='mono'>" + esc(lb.hash) + "</dd>" +
+              "<dt>Height</dt><dd>" + fmt(lb.height) + "</dd>" +
+              "<dt>Time</dt><dd>" + esc(lb.date || "") + "</dd>" +
+              "<dt>Transactions</dt><dd>" + lb.tx_count + "</dd>" +
+              "<dt>Confirmations</dt><dd>" + (lb.confirmations != null ? lb.confirmations : "—") + "</dd></dl>" +
+              "<p style='margin-bottom:0;'>Live data from <span class='mono'>live.json</span>, updated " + esc(window.__liveUpdated || "") + ". Txids: <span class='mono'>" + lb.txids.slice(0, 5).map(esc).join(", ") + "</span></p>";
+          } else if (window.__liveData && /^[0-9a-fA-F]{64}$/.test(q) && window.__liveByHash[q.toLowerCase()]) {
+            var hb = window.__liveByHash[q.toLowerCase()];
+            html = "<h4>Block " + fmt(hb.height) + " <span class='badge badge-ok'>Live</span></h4>" +
+              "<dl><dt>Hash</dt><dd class='mono'>" + esc(hb.hash) + "</dd>" +
+              "<dt>Height</dt><dd>" + fmt(hb.height) + "</dd>" +
+              "<dt>Time</dt><dd>" + esc(hb.date || "") + "</dd>" +
+              "<dt>Transactions</dt><dd>" + hb.tx_count + "</dd></dl>" +
+              "<p style='margin-bottom:0;'>Live data from <span class='mono'>live.json</span>.</p>";
           } else if (q.toLowerCase() === GENESIS_HASH) {
             html = "<h4>Block 0 — Genesis <span class='badge badge-ok'>Verified</span></h4>" +
               "<dl><dt>Hash</dt><dd class='mono'>" + GENESIS_HASH + "</dd>" +
@@ -672,6 +693,52 @@ kwala-cli getnewaddress</code></pre>
             }
           });
         }
+
+        /* ---------- Live data (live.json from live_bridge.py) ---------- */
+        var liveBox = document.getElementById("live-box");
+        window.__liveData = null;
+        window.__liveByHeight = {};
+        window.__liveByHash = {};
+        window.__liveUpdated = "";
+        function escHtml(s) { return String(s).replace(/[&<>"]/g, function (c) { return {"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]; }); }
+        function agoText(iso) {
+          if (!iso) return "unknown";
+          var sec = Math.max(0, Math.round((Date.now() - new Date(iso).getTime()) / 1000));
+          return sec < 60 ? sec + "s ago" : Math.round(sec / 60) + "m ago";
+        }
+        function renderLive(d) {
+          window.__liveData = d;
+          window.__liveByHeight = {};
+          window.__liveByHash = {};
+          (d.blocks || []).forEach(function (b) {
+            window.__liveByHeight[b.height] = b;
+            window.__liveByHash[String(b.hash).toLowerCase()] = b;
+          });
+          window.__liveUpdated = agoText(d.updated_at);
+          var stale = d.updated_at ? (Date.now() - new Date(d.updated_at).getTime()) > 10 * 60 * 1000 : true;
+          var rows = (d.blocks || []).map(function (b) {
+            return "<li><strong>#" + fmt(b.height) + "</strong> — <span class='mono'>" + escHtml(String(b.hash).slice(0, 16)) + "…</span> — " + b.tx_count + " tx — " + escHtml(b.date || "") + "</li>";
+          }).join("");
+          liveBox.innerHTML =
+            "<p><span class='badge badge-ok'>Live</span> <strong>Height " + fmt(d.height) + "</strong> · updated " + escHtml(window.__liveUpdated) + (stale ? " · <span class='badge badge-err'>Stale — bridge may have stopped</span>" : "") + "</p>" +
+            "<p>Best block: <span class='mono'>" + escHtml(d.best_block_hash || "") + "</span></p>" +
+            "<p>Difficulty: " + escHtml(d.difficulty) + " · sync: " + escHtml(d.verification_progress) + "</p>" +
+            "<ul>" + rows + "</ul>" +
+            "<p style='margin-bottom:0;'><small>Source: synced KwalaCoins node, via live_bridge.py — no Docker. New block every 120s, site updates every 2–3 min.</small></p>";
+        }
+        function refreshLive() {
+          if (!liveBox) return;
+          fetch("live.json?x=" + Date.now(), { cache: "no-store" })
+            .then(function (r) { if (!r.ok) throw new Error("live.json " + r.status); return r.json(); })
+            .then(renderLive)
+            .catch(function () {
+              if (!window.__liveData) {
+                liveBox.innerHTML = "<p><span class='badge badge-info'>Live</span> <strong>Live data not available yet</strong></p><p style='margin-bottom:0;'>Start <span class='mono'>live_bridge.py --push</span> on the synced node to push <span class='mono'>live.json</span> here. The static search below still works meanwhile.</p>";
+              }
+            });
+        }
+        refreshLive();
+        setInterval(refreshLive, 60000);
 
         /* ---------- Copy buttons ---------- */
         var copyBtns = document.querySelectorAll("[data-copy]");
