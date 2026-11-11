@@ -1,0 +1,135 @@
+{
+  "coin": "KwalaCoins",
+  "ticker": "KWALA",
+  "updated_at": "2026-11-11T16:21:49.857960+00:00",
+  "genesis": "00000054d99e34f12dcbfe25082833e2e1d28a455be6fde4faac5fc1acf03cb1",
+  "height": 1320,
+  "best_block_hash": "0000001aedc8ff6b27f08fad6c0d75a6d3ae86ef066d86b2b326424ed8999210",
+  "difficulty": 0.009765485301480581,
+  "verification_progress": 1,
+  "chain": "main",
+  "blocks": [
+    {
+      "height": 1320,
+      "hash": "0000001aedc8ff6b27f08fad6c0d75a6d3ae86ef066d86b2b326424ed8999210",
+      "time": 1794412044,
+      "date": "2026-11-11T15:47:24+00:00",
+      "tx_count": 1,
+      "txids": [
+        "d346bdbea7c4475f26db63781be9c9b0e15222ab0de36726e2acc0b18f448e4c"
+      ],
+      "difficulty": 0.009765485301480581,
+      "confirmations": 1
+    },
+    {
+      "height": 1319,
+      "hash": "0000002ee026073c3db16af12879ca342ad9f0745163789bb0ccc061285557ce",
+      "time": 1794411515,
+      "date": "2026-11-11T15:38:35+00:00",
+      "tx_count": 1,
+      "txids": [
+        "9fe1b0623249ad5e74a09d1aab2988ca19515c925d045355cd682ce106a4c98b"
+      ],
+      "difficulty": 0.009765485301480581,
+      "confirmations": 2
+    },
+    {
+      "height": 1318,
+      "hash": "0000002d054e9c42fa81d05f7bc3eb3ea0d38019e18280e358ef3858fa24ca1d",
+      "time": 1794410794,
+      "date": "2026-11-11T15:26:34+00:00",
+      "tx_count": 1,
+      "txids": [
+        "ec50074d8e28878954ae73a61e26cd76246ecb384e9b8d25b0d5fe1026e677d6"
+      ],
+      "difficulty": 0.009765485301480581,
+      "confirmations": 3
+    },
+    {
+      "height": 1317,
+      "hash": "0000004684ae10431541cdd7e6561f2a258d9d730acce7adc18eabbb1a175a90",
+      "time": 1794410370,
+      "date": "2026-11-11T15:19:30+00:00",
+      "tx_count": 1,
+      "txids": [
+        "ccfa8dd672bbf7adb573e2f5a0aedffdd5f1f1ca0819228dbe3182cce0f41243"
+      ],
+      "difficulty": 0.009765485301480581,
+      "confirmations": 4
+    },
+    {
+      "height": 1316,
+      "hash": "0000005386562f2124cf343950cb9e8d48df98e9919abdd1ea77b8ac7bd03efa",
+      "time": 1794409669,
+      "date": "2026-11-11T15:07:49+00:00",
+      "tx_count": 1,
+      "txids": [
+        "adf01a527a9edef5504cbe4cf6954f543da4d428eddabd8f8481acefa5ef24de"
+      ],
+      "difficulty": 0.009765485301480581,
+      "confirmations": 5
+    },
+    {
+      "height": 1315,
+      "hash": "00000014fdfc5f0ba3fb824c1e21c08903ac56de50062f1522c55bd534690129",
+      "time": 1794409129,
+      "date": "2026-11-11T14:58:49+00:00",
+      "tx_count": 1,
+      "txids": [
+        "600bc8b07ced4375abd1f3389b142af36954344228964463e5ea057031cae929"
+      ],
+      "difficulty": 0.009765485301480581,
+      "confirmations": 6
+    },
+    {
+      "height": 1314,
+      "hash": "0000003a6f482dee24e0eab483712280759bf58cc1645f2e4fcc521d890bb929",
+      "time": 1794408483,
+      "date": "2026-11-11T14:48:03+00:00",
+      "tx_count": 1,
+      "txids": [
+        "3058c0190736c4b34087bb345b18e421106166dc678d316447bf6a1784f41b70"
+      ],
+      "difficulty": 0.009765485301480581,
+      "confirmations": 7
+    },
+    {
+      "height": 1313,
+      "hash": "0000002568be80966116f314a6f37d6cb705d5a53830a24dfee581b52f9bd6fa",
+      "time": 1794408324,
+      "date": "2026-11-11T14:45:24+00:00",
+      "tx_count": 1,
+      "txids": [
+        "b842e00d3cc14e6f8735b0cc9c88c53b03d2f2ce0be54855a7b45f5d9373595b"
+      ],
+      "difficulty": 0.009765485301480581,
+      "confirmations": 8
+    },
+    {
+      "height": 1312,
+      "hash": "000000479b9b80b594b374db92dedbdd6270050fa8b2816ffb785b5296be2951",
+      "time": 1794408237,
+      "date": "2026-11-11T14:43:57+00:00",
+      "tx_count": 1,
+      "txids": [
+        "bbfdec0fe42c46c5bd603f3c4b78d33ccf55841968ea15dd14f3c12e8eb89f3e"
+      ],
+      "difficulty": 0.009765485301480581,
+      "confirmations": 9
+    },
+    {
+      "height": 1311,
+      "hash": "0000004262e88f7d56b7b102e6d4bd88cdd021e2253094d31c3587646d5cb5b2",
+      "time": 1794408116,
+      "date": "2026-11-11T14:41:56+00:00",
+      "tx_count": 1,
+      "txids": [
+        "924df2f1ad5257487522a5d3da0219077f0db69650297b5253f4a0e96ec49d0e"
+      ],
+      "difficulty": 0.009765485301480581,
+      "confirmations": 10
+    }
+  ],
+  "source": "local kwalacoind via kwalacoin-cli \u2014 no Docker, no electrs",
+  "note": "Live-ish: updates when this script runs. Address balances and old-tx search need electrs."
+}
