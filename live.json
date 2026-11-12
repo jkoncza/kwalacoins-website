@@ -1,14 +1,26 @@
 {
   "coin": "KwalaCoins",
   "ticker": "KWALA",
-  "updated_at": "2026-11-12T08:47:10.346267+00:00",
+  "updated_at": "2026-11-12T08:49:13.388296+00:00",
   "genesis": "00000054d99e34f12dcbfe25082833e2e1d28a455be6fde4faac5fc1acf03cb1",
-  "height": 1666,
-  "best_block_hash": "00000039df6eb098997f7c95ae0908e66f3396d5c8e007fcdb1511c45bbbac6f",
+  "height": 1667,
+  "best_block_hash": "00000060e4ccb05e6de92550ae6d5f42fb84707756c121ad09212d41e5b302d5",
   "difficulty": 0.009765485301480581,
   "verification_progress": 1,
   "chain": "main",
   "blocks": [
+    {
+      "height": 1667,
+      "hash": "00000060e4ccb05e6de92550ae6d5f42fb84707756c121ad09212d41e5b302d5",
+      "time": 1794473170,
+      "date": "2026-11-12T08:46:10+00:00",
+      "tx_count": 1,
+      "txids": [
+        "c1706a3ed2c93fa9c570ade51499232159291ab2333c4beb8a4bc86c07e489b1"
+      ],
+      "difficulty": 0.009765485301480581,
+      "confirmations": 1
+    },
     {
       "height": 1666,
       "hash": "00000039df6eb098997f7c95ae0908e66f3396d5c8e007fcdb1511c45bbbac6f",
@@ -19,7 +31,7 @@
         "bf558e3f94cb218c5a182a7f3a7e8fb29df48c54026ffb7ab665372111ec5ef9"
       ],
       "difficulty": 0.009765485301480581,
-      "confirmations": 1
+      "confirmations": 2
     },
     {
       "height": 1665,
@@ -31,7 +43,7 @@
         "07ec3cef6c331c385ade2e6ae619e722049f633b291c0a0289601b146f4c3522"
       ],
       "difficulty": 0.009765485301480581,
-      "confirmations": 2
+      "confirmations": 3
     },
     {
       "height": 1664,
@@ -43,7 +55,7 @@
         "12fb9fb479bc2b86e44117475b73987aaf89446d2bd12ae1db5e985026240f1e"
       ],
       "difficulty": 0.009765485301480581,
-      "confirmations": 3
+      "confirmations": 4
     },
     {
       "height": 1663,
@@ -55,7 +67,7 @@
         "c7bcc6b91e2c2aa63a622a5336a78fe4419a788172ad92eeec44323fae4b9a51"
       ],
       "difficulty": 0.009765485301480581,
-      "confirmations": 4
+      "confirmations": 5
     },
     {
       "height": 1662,
@@ -67,7 +79,7 @@
         "5d3a533a8a34c85493ff7e67e1481b1bcf2a81784219fda891be728da8f8d58c"
       ],
       "difficulty": 0.009765485301480581,
-      "confirmations": 5
+      "confirmations": 6
     },
     {
       "height": 1661,
@@ -116,18 +128,6 @@
       ],
       "difficulty": 0.009765485301480581,
       "confirmations": 10
-    },
-    {
-      "height": 1657,
-      "hash": "0000000a631a9d19dd40e0238360333c3304f44ae618f54867dc18b7896cfb50",
-      "time": 1794472593,
-      "date": "2026-11-12T08:36:33+00:00",
-      "tx_count": 1,
-      "txids": [
-        "322a0aa9d329c7d6f4a87c2eecc693447a3c80bda0b56e3eb22aeaf32587d3e2"
-      ],
-      "difficulty": 0.009765485301480581,
-      "confirmations": 11
     }
   ],
   "source": "local kwalacoind via kwalacoin-cli \u2014 no Docker, no electrs",
