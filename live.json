@@ -1,14 +1,38 @@
 {
   "coin": "KwalaCoins",
   "ticker": "KWALA",
-  "updated_at": "2026-11-12T04:28:31.657787+00:00",
+  "updated_at": "2026-11-12T04:30:34.645418+00:00",
   "genesis": "00000054d99e34f12dcbfe25082833e2e1d28a455be6fde4faac5fc1acf03cb1",
-  "height": 1547,
-  "best_block_hash": "0000004d1d1e64739c7df5db8037fe937020aa8411a0664768def806f2589b24",
+  "height": 1549,
+  "best_block_hash": "0000000ebd0810e35c74a28a9118623e3da8bc4126046e98a8a8e51f22987c0c",
   "difficulty": 0.01181864053983965,
   "verification_progress": 1,
   "chain": "main",
   "blocks": [
+    {
+      "height": 1549,
+      "hash": "0000000ebd0810e35c74a28a9118623e3da8bc4126046e98a8a8e51f22987c0c",
+      "time": 1794457718,
+      "date": "2026-11-12T04:28:38+00:00",
+      "tx_count": 1,
+      "txids": [
+        "79aaa0bb4d25af0a8814bb7589c09178b50be3626d49effbb31b8ceedbdbae2e"
+      ],
+      "difficulty": 0.01181864053983965,
+      "confirmations": 1
+    },
+    {
+      "height": 1548,
+      "hash": "00000048d431fc9ad6e51a6acc77715f781d8d4f0fae75917414157d13a8d8d1",
+      "time": 1794457668,
+      "date": "2026-11-12T04:27:48+00:00",
+      "tx_count": 1,
+      "txids": [
+        "c5ec43182d720ce6f2ca156a79ee83ff4c02e0fba4d5458003c6a418d4820299"
+      ],
+      "difficulty": 0.01181864053983965,
+      "confirmations": 2
+    },
     {
       "height": 1547,
       "hash": "0000004d1d1e64739c7df5db8037fe937020aa8411a0664768def806f2589b24",
@@ -19,7 +43,7 @@
         "e24ed4ced61d285b9e37c3c79cbd5bae3046ba329669578fa78400ecf0f8a45d"
       ],
       "difficulty": 0.01181864053983965,
-      "confirmations": 1
+      "confirmations": 3
     },
     {
       "height": 1546,
@@ -31,7 +55,7 @@
         "7938d61e6844e2e0a2d778464bd68930f1cce7ab9b5e8fb0b2a24e3bc5f8b0c7"
       ],
       "difficulty": 0.01181864053983965,
-      "confirmations": 2
+      "confirmations": 4
     },
     {
       "height": 1545,
@@ -43,7 +67,7 @@
         "32efdc30119339480172d1ec905190aa1bc717b399952c56da410919f7020a0c"
       ],
       "difficulty": 0.01181864053983965,
-      "confirmations": 3
+      "confirmations": 5
     },
     {
       "height": 1544,
@@ -55,7 +79,7 @@
         "857a5ca7c3451270d8f4dcc3d067883415db5ebfde9223fca9873adec6597366"
       ],
       "difficulty": 0.01181864053983965,
-      "confirmations": 4
+      "confirmations": 6
     },
     {
       "height": 1543,
@@ -67,7 +91,7 @@
         "32036dd8aa9ab84454d88ba1b1c4b3b3e2f8bc97267acab4da3106ac0c27f822"
       ],
       "difficulty": 0.01181864053983965,
-      "confirmations": 5
+      "confirmations": 7
     },
     {
       "height": 1542,
@@ -79,7 +103,7 @@
         "147303b0cb9ef2964b68e62689a29418ce4278760fe6bdb9063d24dde783f054"
       ],
       "difficulty": 0.01181864053983965,
-      "confirmations": 6
+      "confirmations": 8
     },
     {
       "height": 1541,
@@ -91,7 +115,7 @@
         "5a7422c1e9cbc1f745410b2846fc2722a163e4396ccfd31ea8f44718c5a7955e"
       ],
       "difficulty": 0.01181864053983965,
-      "confirmations": 7
+      "confirmations": 9
     },
     {
       "height": 1540,
@@ -101,30 +125,6 @@
       "tx_count": 1,
       "txids": [
         "09fbd7913fcfb8a1959ced62793441415ef2db1b73760ebec6f35e1a46867acd"
-      ],
-      "difficulty": 0.01181864053983965,
-      "confirmations": 8
-    },
-    {
-      "height": 1539,
-      "hash": "0000004732a97ced9e3893b544c3fdce879eeda0849ffa70baa209138f08cad4",
-      "time": 1794456179,
-      "date": "2026-11-12T04:02:59+00:00",
-      "tx_count": 1,
-      "txids": [
-        "4933e1d00c25e0e94495dac48f7c0908c9ec03e6b2656313b80c73ff1c77dc96"
-      ],
-      "difficulty": 0.01181864053983965,
-      "confirmations": 9
-    },
-    {
-      "height": 1538,
-      "hash": "0000002b6185cbca1fba86d534f038311166812e9cf1b122b8330fe59b4eb73b",
-      "time": 1794455996,
-      "date": "2026-11-12T03:59:56+00:00",
-      "tx_count": 1,
-      "txids": [
-        "abf3d17295530c44d0f4da0c5d1cfc980ac1c9dcc18bab8106571666fb69f5eb"
       ],
       "difficulty": 0.01181864053983965,
       "confirmations": 10
