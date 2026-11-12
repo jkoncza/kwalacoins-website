@@ -1,7 +1,7 @@
 {
   "coin": "KwalaCoins",
   "ticker": "KWALA",
-  "updated_at": "2026-11-12T03:33:05.064562+00:00",
+  "updated_at": "2026-11-12T03:35:08.193309+00:00",
   "genesis": "00000054d99e34f12dcbfe25082833e2e1d28a455be6fde4faac5fc1acf03cb1",
   "height": 1522,
   "best_block_hash": "00000058766f7fa58d0e5cbc7074544053f30118515fb967803a2a806ae3fbd5",
@@ -55,7 +55,7 @@
         "2ffd4a22d3ad4e91b4bddd6d4adfe6625e327bfd677525bb8086b7edec7ba869"
       ],
       "difficulty": 0.01090926161103501,
-      "confirmations": 4
+      "confirmations": 5
     },
     {
       "height": 1518,
@@ -67,7 +67,7 @@
         "ea6880f67e64740fb09f283e7701f7dc04ee683c2fa5fa071e7a04e43ecbffac"
       ],
       "difficulty": 0.01090926161103501,
-      "confirmations": 5
+      "confirmations": 6
     },
     {
       "height": 1517,
@@ -79,7 +79,7 @@
         "94b901639e67b6db064ca1d9c192a5899ff74d3a64fcce1672b12cce9aabde38"
       ],
       "difficulty": 0.01090926161103501,
-      "confirmations": 6
+      "confirmations": 7
     },
     {
       "height": 1516,
@@ -91,7 +91,7 @@
         "8eef5e462e15733bcb03c34ec4c1a0d374c2bb76603c2207f09c8f4bf0df1134"
       ],
       "difficulty": 0.01090926161103501,
-      "confirmations": 7
+      "confirmations": 8
     },
     {
       "height": 1515,
@@ -103,7 +103,7 @@
         "219b05da04baeb9dc112bfdeea17b6a3dd6fa7300e055ed37cb390fb16aff283"
       ],
       "difficulty": 0.01090926161103501,
-      "confirmations": 8
+      "confirmations": 9
     },
     {
       "height": 1514,
@@ -115,7 +115,7 @@
         "1557fe42509a4afdd1131fc0cf1a3e5c56709584a77a81f6818abb584a27a083"
       ],
       "difficulty": 0.01090926161103501,
-      "confirmations": 9
+      "confirmations": 10
     },
     {
       "height": 1513,
@@ -127,7 +127,7 @@
         "0a2fd6519ae9423a8ce8238ab15d880205ffbb5a36977a1f9aa287b4019e16af"
       ],
       "difficulty": 0.01090926161103501,
-      "confirmations": 10
+      "confirmations": 11
     }
   ],
   "source": "local kwalacoind via kwalacoin-cli \u2014 no Docker, no electrs",
