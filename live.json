@@ -1,14 +1,50 @@
 {
   "coin": "KwalaCoins",
   "ticker": "KWALA",
-  "updated_at": "2026-11-12T12:32:59.379829+00:00",
+  "updated_at": "2026-11-12T12:35:02.601428+00:00",
   "genesis": "00000054d99e34f12dcbfe25082833e2e1d28a455be6fde4faac5fc1acf03cb1",
-  "height": 1751,
-  "best_block_hash": "000000370596babead3aa2d88b09f91bbb457cc5bc737a8a49517d9efb40b644",
+  "height": 1754,
+  "best_block_hash": "0000002f56511a53baf17739da7a814e5cdf0806c2befdc03352d093f2e15410",
   "difficulty": 0.009765485301480581,
   "verification_progress": 1,
   "chain": "main",
   "blocks": [
+    {
+      "height": 1754,
+      "hash": "0000002f56511a53baf17739da7a814e5cdf0806c2befdc03352d093f2e15410",
+      "time": 1794486840,
+      "date": "2026-11-12T12:34:00+00:00",
+      "tx_count": 1,
+      "txids": [
+        "3bd2ea42c954023550df03a9b491a662b8789c154268e14e3645f8af3af32c96"
+      ],
+      "difficulty": 0.009765485301480581,
+      "confirmations": 1
+    },
+    {
+      "height": 1753,
+      "hash": "0000004a28b8f7dc9f70e9ad422064c2451134a76400f8e7a99618fc0ae63dbc",
+      "time": 1794486802,
+      "date": "2026-11-12T12:33:22+00:00",
+      "tx_count": 1,
+      "txids": [
+        "1e1a87cc9dbe6e225e8c831c6fe5dce5f2d6a68254c9a2a9e3cc16c226a2dec1"
+      ],
+      "difficulty": 0.009765485301480581,
+      "confirmations": 2
+    },
+    {
+      "height": 1752,
+      "hash": "0000004e74f3625c1ce5310629da3509ba9718cf4aee16ee5755ccb3dc3377b3",
+      "time": 1794486730,
+      "date": "2026-11-12T12:32:10+00:00",
+      "tx_count": 1,
+      "txids": [
+        "9dbeb95dbb3cdd85a7c1fd8b88c8a6a77de82d348ac4084b7d0dab3240be3cc4"
+      ],
+      "difficulty": 0.009765485301480581,
+      "confirmations": 3
+    },
     {
       "height": 1751,
       "hash": "000000370596babead3aa2d88b09f91bbb457cc5bc737a8a49517d9efb40b644",
@@ -19,7 +55,7 @@
         "899a4cbfba0a0b2678d56704dd25e7fff00a5e870d867fb07a649e3a4b2ae70b"
       ],
       "difficulty": 0.009765485301480581,
-      "confirmations": 1
+      "confirmations": 4
     },
     {
       "height": 1750,
@@ -31,7 +67,7 @@
         "3c62836f6f065d98ac70b5b33b1fe4dbf47f15c2772238188760cdd001d045bc"
       ],
       "difficulty": 0.009765485301480581,
-      "confirmations": 2
+      "confirmations": 5
     },
     {
       "height": 1749,
@@ -43,7 +79,7 @@
         "54c1acbb03de664e1b8bd07753aa395fb4f65f33a1ea63aba1f1f49324f6a334"
       ],
       "difficulty": 0.009765485301480581,
-      "confirmations": 3
+      "confirmations": 6
     },
     {
       "height": 1748,
@@ -55,7 +91,7 @@
         "1378687599fa5797829935fe17331e9b1c2d32d157bdc5dd4141d1d93d1fbe7e"
       ],
       "difficulty": 0.009765485301480581,
-      "confirmations": 4
+      "confirmations": 7
     },
     {
       "height": 1747,
@@ -67,7 +103,7 @@
         "ac1d3671ce9b0a7916ef11ed58514fe7a9b2ee412ba0eb6baf52abab1df69d5e"
       ],
       "difficulty": 0.009765485301480581,
-      "confirmations": 5
+      "confirmations": 8
     },
     {
       "height": 1746,
@@ -79,7 +115,7 @@
         "1491f98ec9c7845b8089c8b412ea8d7daae737e795fdafe473a7d6c8457cbcac"
       ],
       "difficulty": 0.009765485301480581,
-      "confirmations": 6
+      "confirmations": 9
     },
     {
       "height": 1745,
@@ -89,42 +125,6 @@
       "tx_count": 1,
       "txids": [
         "aeb602a1b425cde0a87da7dd3afa70481d0315aaca5ef0780417a23721e46e12"
-      ],
-      "difficulty": 0.009765485301480581,
-      "confirmations": 7
-    },
-    {
-      "height": 1744,
-      "hash": "0000005b3e9265be23f1cee275b5f742990877adad0df32cc4850f344c37404a",
-      "time": 1794485860,
-      "date": "2026-11-12T12:17:40+00:00",
-      "tx_count": 1,
-      "txids": [
-        "12b59c5b59184f5214b66afbe9187e07e1e137d43c01aa478cfa8bac21f87a25"
-      ],
-      "difficulty": 0.009765485301480581,
-      "confirmations": 8
-    },
-    {
-      "height": 1743,
-      "hash": "00000019481e6f3d1c2f9bb2ac906005531c8b6a924f96f1f423d55f855d581f",
-      "time": 1794485763,
-      "date": "2026-11-12T12:16:03+00:00",
-      "tx_count": 1,
-      "txids": [
-        "88b432e798ce8e6c75314d624488bf7eba4e33776945edf675c33f68a1bb4a0e"
-      ],
-      "difficulty": 0.009765485301480581,
-      "confirmations": 9
-    },
-    {
-      "height": 1742,
-      "hash": "000000339c87fb42917c01631b73d73e1d2f12fe6eb7b88679051a9a63b576db",
-      "time": 1794485565,
-      "date": "2026-11-12T12:12:45+00:00",
-      "tx_count": 1,
-      "txids": [
-        "aad6082cb794be78330aa5195ecf32f4d0f29366bccd6eb63fd447ef0e68ec7f"
       ],
       "difficulty": 0.009765485301480581,
       "confirmations": 10
