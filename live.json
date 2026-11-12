@@ -1,14 +1,38 @@
 {
   "coin": "KwalaCoins",
   "ticker": "KWALA",
-  "updated_at": "2026-11-12T13:16:05.796589+00:00",
+  "updated_at": "2026-11-12T13:18:09.520554+00:00",
   "genesis": "00000054d99e34f12dcbfe25082833e2e1d28a455be6fde4faac5fc1acf03cb1",
-  "height": 1773,
-  "best_block_hash": "0000001866df02d2ac7df5923e315e046cfeb8671ba4013bd1de075180863b79",
+  "height": 1775,
+  "best_block_hash": "00000058e6afb56afba93cf428bb1aecb33c2caa409e84572ef581a07bdf39b1",
   "difficulty": 0.01069864511581179,
   "verification_progress": 1,
   "chain": "main",
   "blocks": [
+    {
+      "height": 1775,
+      "hash": "00000058e6afb56afba93cf428bb1aecb33c2caa409e84572ef581a07bdf39b1",
+      "time": 1794489389,
+      "date": "2026-11-12T13:16:29+00:00",
+      "tx_count": 1,
+      "txids": [
+        "9d5cb9126aa60e243db10b5ed0d2b26bde35a71fb17783c8465d3e282c0fcc81"
+      ],
+      "difficulty": 0.01069864511581179,
+      "confirmations": 1
+    },
+    {
+      "height": 1774,
+      "hash": "00000021199936fcc1b7ec687dd768ffc8f38169bed21157abb6d582aa22eeb6",
+      "time": 1794489217,
+      "date": "2026-11-12T13:13:37+00:00",
+      "tx_count": 1,
+      "txids": [
+        "a890776f29cd28c164a20e77d6e026a9dae55e107ed4dad3f35ef06ed1917b32"
+      ],
+      "difficulty": 0.01069864511581179,
+      "confirmations": 2
+    },
     {
       "height": 1773,
       "hash": "0000001866df02d2ac7df5923e315e046cfeb8671ba4013bd1de075180863b79",
@@ -19,7 +43,7 @@
         "25a03e051f7ca4ef21318220ac16f931f7872c75265451d019cab6146bb5b6dd"
       ],
       "difficulty": 0.01069864511581179,
-      "confirmations": 1
+      "confirmations": 3
     },
     {
       "height": 1772,
@@ -31,7 +55,7 @@
         "002e17b29e84012075fa94a56b5ba926830deb49e036c5c21282e85edb43cc79"
       ],
       "difficulty": 0.01069864511581179,
-      "confirmations": 2
+      "confirmations": 4
     },
     {
       "height": 1771,
@@ -43,7 +67,7 @@
         "5842ef9c205c40dbe8e2472fce4afeb979d22a5108b132bf17d261ef46017fc5"
       ],
       "difficulty": 0.01069864511581179,
-      "confirmations": 3
+      "confirmations": 5
     },
     {
       "height": 1770,
@@ -55,7 +79,7 @@
         "eb466b581ea977cbf95056dcf61d7253975613157ed13c529d3f211401092d3c"
       ],
       "difficulty": 0.01069864511581179,
-      "confirmations": 4
+      "confirmations": 6
     },
     {
       "height": 1769,
@@ -67,7 +91,7 @@
         "4a79a649ba4185c332321becd6343cad6f4800c7688af8610597c7a114785f67"
       ],
       "difficulty": 0.009765485301480581,
-      "confirmations": 5
+      "confirmations": 7
     },
     {
       "height": 1768,
@@ -79,7 +103,7 @@
         "91a7d32fa9a96739dfbddc80c1b3aeb8f8ae5708b58e1e56c88fdd0f91a5aa1b"
       ],
       "difficulty": 0.009765485301480581,
-      "confirmations": 6
+      "confirmations": 8
     },
     {
       "height": 1767,
@@ -91,7 +115,7 @@
         "0364d10f84cd7966e17c7b492baef2489e212ab8047634f967f361a33258acf5"
       ],
       "difficulty": 0.009765485301480581,
-      "confirmations": 7
+      "confirmations": 9
     },
     {
       "height": 1766,
@@ -101,30 +125,6 @@
       "tx_count": 1,
       "txids": [
         "15ebd49f709596261517bc51f00a56d6420232d4d8484113480ebee7a384652b"
-      ],
-      "difficulty": 0.009765485301480581,
-      "confirmations": 8
-    },
-    {
-      "height": 1765,
-      "hash": "00000011ceccc1650589d2446b46b159cf2e9421fa55974b6ea564f4926bdcfa",
-      "time": 1794488612,
-      "date": "2026-11-12T13:03:32+00:00",
-      "tx_count": 1,
-      "txids": [
-        "e4a6eb27f4df6fa8313b0878eaa63901c12a7ba107675efacdb1c12d4ef14e0f"
-      ],
-      "difficulty": 0.009765485301480581,
-      "confirmations": 9
-    },
-    {
-      "height": 1764,
-      "hash": "000000102d7aad078e250723b1dcdf20b116ec31903f6b9792b6f2330e71237b",
-      "time": 1794488372,
-      "date": "2026-11-12T12:59:32+00:00",
-      "tx_count": 1,
-      "txids": [
-        "5f5f782468b92343816d8d99243ac66ce9dcf8568962e491de49b983d4b11ad1"
       ],
       "difficulty": 0.009765485301480581,
       "confirmations": 10
