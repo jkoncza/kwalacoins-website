@@ -1,7 +1,7 @@
 {
   "coin": "KwalaCoins",
   "ticker": "KWALA",
-  "updated_at": "2026-11-13T13:11:54.456084+00:00",
+  "updated_at": "2026-11-13T13:13:59.624584+00:00",
   "genesis": "00000054d99e34f12dcbfe25082833e2e1d28a455be6fde4faac5fc1acf03cb1",
   "height": 2106,
   "best_block_hash": "0000005d9df53d94e3325fb106fdf13d1df3dfd683c88d74a9d589bdbb7e22ae",
@@ -127,7 +127,7 @@
         "ff8f4deac1df5f5a2c4da0b50058b95cd5e95030e508404b98dcc26ae663d9a5"
       ],
       "difficulty": 0.009765485301480581,
-      "confirmations": 10
+      "confirmations": 11
     }
   ],
   "source": "local kwalacoind via kwalacoin-cli \u2014 no Docker, no electrs",
